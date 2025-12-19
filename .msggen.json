@@ -2049,6 +2049,7 @@
         "InvoiceResponse": {
             "Invoice.bolt11": 1,
             "Invoice.created_index": 10,
+            "Invoice.description": 11,
             "Invoice.expires_at": 4,
             "Invoice.payment_hash": 2,
             "Invoice.payment_secret": 3,
