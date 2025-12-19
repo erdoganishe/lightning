@@ -144,6 +144,13 @@
           "1-based index indicating order this invoice was created in."
         ]
       },
+      "description":{
+        "type": "string",
+        "added": "v26.04",
+        "description": [
+          "Invoice description."
+        ]
+      },
       "warning_capacity": {
         "type": "string",
         "description": [
