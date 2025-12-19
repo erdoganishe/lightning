@@ -669,6 +669,7 @@ impl From<responses::InvoiceResponse> for pb::InvoiceResponse {
         Self {
             bolt11: c.bolt11, // Rule #2 for type string
             created_index: c.created_index, // Rule #2 for type u64?
+            description: c.description, // Rule #2 for type string?
             expires_at: c.expires_at, // Rule #2 for type u64
             payment_hash: <Sha256 as AsRef<[u8]>>::as_ref(&c.payment_hash).to_vec(), // Rule #2 for type hash
             payment_secret: c.payment_secret.to_vec(), // Rule #2 for type secret

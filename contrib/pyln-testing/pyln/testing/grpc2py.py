@@ -486,6 +486,7 @@ def invoice2py(m):
     return remove_default({
         "bolt11": m.bolt11,  # PrimitiveField in generate_composite
         "created_index": m.created_index,  # PrimitiveField in generate_composite
+        "description": m.description,  # PrimitiveField in generate_composite
         "expires_at": m.expires_at,  # PrimitiveField in generate_composite
         "payment_hash": hexlify(m.payment_hash),  # PrimitiveField in generate_composite
         "payment_secret": hexlify(m.payment_secret),  # PrimitiveField in generate_composite

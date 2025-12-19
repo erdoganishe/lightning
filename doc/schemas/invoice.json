@@ -146,7 +146,6 @@
       },
       "description":{
         "type": "string",
-        "added": "v26.04",
         "description": [
           "Invoice description."
         ]
