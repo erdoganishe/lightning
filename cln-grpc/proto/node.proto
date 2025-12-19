@@ -805,6 +805,7 @@ message InvoiceResponse {
 	optional string warning_private_unused = 8;
 	optional string warning_mpp = 9;
 	optional uint64 created_index = 10;
+	optional string description = 11;
 }
 
 message InvoicerequestRequest {

@@ -500,6 +500,7 @@ async fn on_lsps_lsps2_invoice(
         expires_at: public_inv.expires_at,
         payment_hash: public_inv.payment_hash,
         payment_secret: public_inv.payment_secret,
+        description: public_inv.description,
     };
     Ok(serde_json::to_value(out)?)
 }
