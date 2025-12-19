@@ -870,6 +870,7 @@ invoice_complete(struct invoice_info *info,
 	invoice_secret(&details->r, &payment_secret);
 	json_add_secret(response, "payment_secret", &payment_secret);
 	json_add_u64(response, "created_index", details->created_index);
+	json_add_string(response, "description", details->description);
 
 	notify_invoice_creation(info->cmd->ld, info->b11->msat,
 				&info->payment_preimage, info->label);
